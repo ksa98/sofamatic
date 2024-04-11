@@ -1,6 +1,9 @@
 # rSOFA: An R Package for Calculating SOFA Scores 🩺⚕️
 
 ![R version](https://img.shields.io/badge/R-4.2.2-blue?logo=R&logoColor=white)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)
+[![License](https://img.shields.io/badge/license-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Description
 
