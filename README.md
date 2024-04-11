@@ -70,6 +70,11 @@ We welcome contributions to the `rSOFA` package, including feature requests, bug
 
 This package was developed by researchers and clinicians with expertise in critical care medicine, biostatistics, and data science. We thank the critical care community for their invaluable insights and feedback.
 
+- **Dr. Sander van Kuijk**, Associate Professor at Faculty of Health, Medicine and Life Sciences, Epidemiology. Researcher at MUMC/KIO Kemta. Expertise in clinical epidemiology and statistics. ORCID: https://orcid.org/0000-0003-2796-729X.
+- **Dr. Bas van Bussel**, Assistant Professor at Faculty of Health, Medicine and Life Sciences, Intensive Care. Internist/intensivist focused on General Intensive Care and Acute Medicine. ORCID: https://orcid.org/0000-0003-1621-7848.
+
+Their contributions have been instrumental to this package.
+
 ---
 
 For more information, please visit the `rSOFA` package documentation or contact the package maintainers.
