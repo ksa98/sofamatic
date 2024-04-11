@@ -1,5 +1,7 @@
 # rSOFA: An R Package for Calculating SOFA Scores 🩺⚕️
 
+![R version](https://img.shields.io/badge/R-4.2.2-blue?logo=R&logoColor=white)
+
 ## Description
 
 The `rSOFA` package provides a comprehensive set of tools for calculating the Sequential Organ Failure Assessment (SOFA) scores from clinical datasets. This package is designed to support both cross-sectional and longitudinal analyses, accommodating datasets with repeated measurements over time. The SOFA score, a critical measure for assessing organ dysfunction in critically ill patients, can be instrumental in clinical studies and healthcare analytics.
