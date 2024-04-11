@@ -4,6 +4,11 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-green.svg)
 [![License](https://img.shields.io/badge/license-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
+Built by
+  <a href="https://github.com/ksamaritakis">Keano Samaritakis</a> and
+  <a href="https://github.com/ksamaritakis/rSOFA/graphs/contributors">
+    contributors
+  </a>
 
 ## Description
 
