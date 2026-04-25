@@ -1,0 +1,20 @@
+<!-- Thanks for contributing to sofamatic! -->
+
+## Summary
+
+<!-- One or two sentences: what does this PR do and why? -->
+
+## Type of change
+
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Breaking change
+- [ ] Documentation only
+
+## Checklist
+
+- [ ] `devtools::test()` passes locally
+- [ ] `devtools::check()` reports 0 errors / 0 warnings
+- [ ] New behaviour is covered by tests
+- [ ] `NEWS.md` is updated for user-facing changes
+- [ ] Roxygen documentation regenerated (`devtools::document()`)

@@ -2,3 +2,15 @@
 ^renv\.lock$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+^\.gitignore$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^vignettes/articles$
+^cran-comments\.md$
+^CONTRIBUTING\.md$
+^CITATION\.cff$
+^README\.Rmd$
+^\.DS_Store$
+^.*\.DS_Store$

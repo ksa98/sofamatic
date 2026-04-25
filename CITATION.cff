@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use sofamatic in academic work, please cite it as below."
+title: "sofamatic: Sequential Organ Failure Assessment scoring in R"
+abstract: >
+  An R package providing vectorised functions to compute Sequential Organ
+  Failure Assessment (SOFA) sub-scores and the total SOFA score from
+  clinical data, with longitudinal helpers and configurable handling of
+  missing GCS values.
+authors:
+  - family-names: Samaritakis
+    given-names: Keano
+    orcid: "https://orcid.org/0000-0002-6338-1918"
+type: software
+license: BSD-4-Clause
+repository-code: "https://github.com/ksa98/sofamatic"
+version: "0.1.0"
+date-released: "2024-04-25"
+keywords:
+  - SOFA
+  - critical care
+  - intensive care
+  - sepsis
+  - clinical scoring
+  - R package
+references:
+  - type: article
+    authors:
+      - family-names: Vincent
+        given-names: Jean-Louis
+      - family-names: Moreno
+        given-names: Rui
+      - family-names: Takala
+        given-names: Jukka
+      - family-names: Willatts
+        given-names: Sheila
+      - family-names: De Mendonça
+        given-names: Arnaldo
+      - family-names: Bruining
+        given-names: Hajo
+    title: "The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure"
+    journal: Intensive Care Medicine
+    year: 1996
+    volume: 22
+    issue: 7
+    start: 707
+    end: 710
+    doi: 10.1007/BF01709751

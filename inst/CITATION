@@ -1,0 +1,26 @@
+bibentry(
+  bibtype  = "Manual",
+  title    = "{sofamatic}: Sequential Organ Failure Assessment scoring in R",
+  author   = person(given = "Keano", family = "Samaritakis"),
+  year     = "2024",
+  note     = sprintf("R package version %s", meta$Version),
+  url      = "https://github.com/ksa98/sofamatic"
+)
+
+bibentry(
+  bibtype = "Article",
+  title   = "The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure",
+  author  = c(
+    person("Jean-Louis", "Vincent"),
+    person("Rui",        "Moreno"),
+    person("Jukka",      "Takala"),
+    person("Sheila",     "Willatts")
+  ),
+  journal = "Intensive Care Medicine",
+  year    = "1996",
+  volume  = "22",
+  number  = "7",
+  pages   = "707--710",
+  doi     = "10.1007/BF01709751",
+  header  = "If you cite the SOFA methodology itself, please also cite:"
+)

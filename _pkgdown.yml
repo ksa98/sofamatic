@@ -1,0 +1,33 @@
+url: https://ksa98.github.io/sofamatic/
+template:
+  bootstrap: 5
+
+articles:
+- title: Articles
+  navbar: ~
+  contents:
+  - sofamatic-introduction
+  - case-study-icu-cohort
+  - edge-cases-and-limits
+  - faq
+
+reference:
+- title: Aggregate scoring
+  desc: Compute all six SOFA components plus the total score from a data frame.
+  contents:
+  - calculate_sofa
+- title: Component scoring
+  desc: Vectorised functions for each individual SOFA component.
+  contents:
+  - score_respiratory
+  - score_coagulation
+  - score_liver
+  - score_cardiovascular
+  - score_neurological
+  - score_renal
+- title: Example data
+  contents:
+  - example_sofa_data
+- title: Package
+  contents:
+  - sofamatic-package

@@ -1,0 +1,130 @@
+---
+title: "Introduction to sofamatic"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to sofamatic}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>"
+)
+```
+
+> *Automatic SOFA scoring for R.*
+
+## What this package does
+
+`sofamatic` computes the Sequential Organ Failure Assessment (SOFA) score
+and its six sub-scores from clinical data. It exposes one vectorised
+function per component plus a `calculate_sofa()` aggregator that takes a
+long-format data frame and returns it augmented with all sub-scores, the
+total score, and (optionally) longitudinal helpers (`SOFA_admission`,
+`SOFA_max`).
+
+The thresholds follow the canonical definition (Vincent et al., 1996).
+Both SI units (kPa, µmol/L) and conventional units (mmHg, mg/dL) are
+supported.
+
+```{r setup}
+library(sofamatic)
+```
+
+## Single-component scoring
+
+Each component is a vectorised function:
+
+```{r}
+score_respiratory(c(450, 350, 250, 150, 80),
+                  ventilated = c(0, 0, 1, 1, 1),
+                  units = "mmHg")
+
+score_coagulation(c(180, 130, 75, 35, 12))
+
+score_liver(c(0.8, 1.5, 3, 8, 14), units = "mg/dL")
+
+score_cardiovascular(map = c(80, 65, 60, 60),
+                     norepinephrine = c(0, 0, 0.05, 0.2))
+
+score_neurological(c(15, 13, 11, 8, 4))
+
+score_renal(creatinine = c(0.9, 1.5, 2.5, 4, 6), units = "mg/dL")
+```
+
+Use `?score_respiratory` (etc.) to see the full thresholds and unit
+conventions.
+
+## Cross-sectional aggregation
+
+`calculate_sofa()` accepts a data frame and column names. Defaults match
+the parameter names (`pao2_fio2`, `platelets`, `bilirubin`, `map`, `gcs`,
+`creatinine`, …); every column name is overridable.
+
+```{r}
+df <- example_sofa_data(n_subjects = 4, days_each = 1)
+calculate_sofa(df)[, c("SOFA_resp", "SOFA_coag", "SOFA_liver",
+                       "SOFA_cardio", "SOFA_neuro", "SOFA_renal",
+                       "SOFA_score")]
+```
+
+## Longitudinal data
+
+For long-format longitudinal data (one row per subject per day), supply
+`id` and `time` to also get `SOFA_admission` (first day) and `SOFA_max`
+(worst day) per subject.
+
+```{r}
+df  <- example_sofa_data(n_subjects = 3, days_each = 4)
+out <- calculate_sofa(df, id = "subject_id", time = "day")
+out[, c("subject_id", "day",
+        "SOFA_score", "SOFA_admission", "SOFA_max")]
+```
+
+## Handling missing data
+
+`calculate_sofa(na_strategy = "sum_na_zero")` (the default) treats `NA`
+sub-scores as 0 in the total — convenient when only some components are
+unmeasured. Use `na_strategy = "propagate"` to instead return `NA`
+whenever any sub-score is missing.
+
+For the neurological sub-score, `score_neurological()` accepts a
+`sedation` flag. A missing GCS in a non-sedated patient is treated as
+"alert" (score 0); a missing GCS in a sedated patient is treated as
+moderate impairment (score 2). This reflects the common ICU practice in
+which fully responsive, non-sedated patients are often not re-assessed,
+leaving the GCS field blank.
+
+## The synthetic example dataset
+
+`example_sofa_data()` returns a fully synthetic, longitudinal ICU-style
+dataset. The data are simulated and never describe a real patient.
+Distributions are loosely calibrated to look plausible (e.g., lower
+PaO2/FiO2 in ventilated rows, occasional missing GCS in sedated rows,
+~10 % dialysis prevalence), but they should never be used to draw
+clinical conclusions.
+
+```{r}
+str(example_sofa_data(n_subjects = 2, days_each = 2))
+```
+
+## Units and thresholds at a glance
+
+| Component       | Threshold variable | Standard unit | Conventional unit |
+|-----------------|--------------------|--------------|--------------------|
+| Respiratory     | PaO2/FiO2          | kPa          | mmHg               |
+| Coagulation     | Platelets          | 10⁹/L        | —                  |
+| Liver           | Bilirubin          | µmol/L       | mg/dL              |
+| Cardiovascular  | MAP, vasoactives   | mmHg, µg/kg/min | —               |
+| Neurological    | GCS                | 3–15         | —                  |
+| Renal           | Creatinine, urine  | µmol/L, mL/24h  | mg/dL           |
+
+## References
+
+Vincent, J. L., Moreno, R., Takala, J., Willatts, S., De Mendonça, A.,
+Bruining, H., … Thijs, L. G. (1996). The SOFA (Sepsis-related Organ
+Failure Assessment) score to describe organ dysfunction/failure.
+*Intensive Care Medicine*, 22(7), 707–710.
+<https://doi.org/10.1007/BF01709751>

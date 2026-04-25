@@ -1,11 +1,33 @@
-Package: rSOFA
+Package: sofamatic
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Sequential Organ Failure Assessment (SOFA) Scoring in R
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: person(given  = "Keano",
+                  family = "Samaritakis",
+                  role   = c("aut", "cre", "cph"),
+                  email  = "do-not-contact@invalid",
+                  comment = c(ORCID = "0000-0002-6338-1918"))
+Description: Vectorised, dependency-light functions to compute Sequential
+    Organ Failure Assessment (SOFA) sub-scores and the total SOFA score
+    from clinical data, including longitudinal helpers for first-day and
+    worst-day scoring per subject. Supports SI and conventional units for
+    PaO2/FiO2, bilirubin, and creatinine, and offers configurable handling
+    of missing Glasgow Coma Scale values in sedated and non-sedated
+    patients. Methodology follows Vincent et al. (1996)
+    <doi:10.1007/BF01709751>.
+License: file LICENSE
+URL: https://github.com/ksa98/sofamatic, https://ksa98.github.io/sofamatic/
+BugReports: https://github.com/ksa98/sofamatic/issues
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 4.0.0)
+Imports:
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Roxygen: list(markdown = TRUE)
