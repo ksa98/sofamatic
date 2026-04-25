@@ -1,0 +1,12 @@
+pandoc: 3.1.11
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  articles/case-study-icu-cohort: case-study-icu-cohort.html
+  articles/edge-cases-and-limits: edge-cases-and-limits.html
+  articles/faq: faq.html
+  sofamatic-introduction: sofamatic-introduction.html
+last_built: 2026-04-25T11:38Z
+urls:
+  reference: https://ksa98.github.io/sofamatic/reference
+  article: https://ksa98.github.io/sofamatic/articles
