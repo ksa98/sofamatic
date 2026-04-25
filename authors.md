@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/ksa98/sofamatic/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/ksa98/sofamatic/blob/v0.1.0/inst/CITATION)
 
 Samaritakis K (2024). *Sofamatic: Sequential Organ Failure Assessment
 scoring in R*. R package version 0.1.0,
