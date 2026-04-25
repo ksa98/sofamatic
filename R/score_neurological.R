@@ -8,12 +8,12 @@
 #' non-sedated patient is often not re-assessed and so the GCS field is
 #' left blank.
 #'
-#' @param gcs Integer or numeric vector of GCS values (3–15).
+#' @param gcs Integer or numeric vector of GCS values (3-15).
 #' @param sedation Optional logical or 0/1 vector indicating whether the
 #'   patient was sedated at the time of assessment. When `NULL`, missing GCS
 #'   values produce `NA_integer_` scores.
 #' @param na_strategy How to handle `NA` GCS when `sedation` is `NULL`. One
-#'   of `"na"` (default — return `NA_integer_`) or `"zero"` (treat missing
+#'   of `"na"` (default -- return `NA_integer_`) or `"zero"` (treat missing
 #'   GCS as the best state, score 0).
 #'
 #' @return Integer vector in `{0, 1, 2, 3, 4}` (or `NA_integer_`).
@@ -21,9 +21,9 @@
 #' @section Scoring rules:
 #' \itemize{
 #'   \item GCS 15:        0
-#'   \item GCS 13–14:     1
-#'   \item GCS 10–12:     2
-#'   \item GCS  6–9:      3
+#'   \item GCS 13-14:     1
+#'   \item GCS 10-12:     2
+#'   \item GCS  6-9:      3
 #'   \item GCS  < 6:      4
 #' }
 #'

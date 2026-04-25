@@ -1,11 +1,11 @@
 Package: sofamatic
 Type: Package
-Title: Sequential Organ Failure Assessment (SOFA) Scoring in R
+Title: Sequential Organ Failure Assessment (SOFA) Scoring
 Version: 0.1.0
 Authors@R: person(given  = "Keano",
                   family = "Samaritakis",
                   role   = c("aut", "cre", "cph"),
-                  email  = "do-not-contact@invalid",
+                  email  = "k.samaritakis@proton.me",
                   comment = c(ORCID = "0000-0002-6338-1918"))
 Description: Vectorised, dependency-light functions to compute Sequential
     Organ Failure Assessment (SOFA) sub-scores and the total SOFA score
@@ -19,7 +19,6 @@ License: file LICENSE
 URL: https://github.com/ksa98/sofamatic, https://ksa98.github.io/sofamatic/
 BugReports: https://github.com/ksa98/sofamatic/issues
 Encoding: UTF-8
-LazyData: true
 Depends: R (>= 4.0.0)
 Imports:
     stats

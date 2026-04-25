@@ -21,7 +21,7 @@ therapy. Patients receiving dialysis are scored 4 regardless of
 creatinine and urine output.}
 
 \item{units}{One of \code{"umol/L"} (default) or \code{"mg/dL"} for creatinine.
-Conversion factor 1 mg/dL ≈ 88.4 µmol/L.}
+Conversion factor 1 mg/dL ~ 88.4 umol/L.}
 }
 \value{
 Integer vector in \verb{\{0, 1, 2, 3, 4\}} (or \code{NA_integer_}).
@@ -31,13 +31,13 @@ Scores the renal subscale of the SOFA from serum creatinine and, optionally,
 24-hour urine output. When \code{dialysis} is supplied, any patient receiving
 dialysis is assigned score 4.
 }
-\section{Scoring rules (µmol/L)}{
+\section{Scoring rules (umol/L)}{
 
 \itemize{
 \item \verb{< 110}:                          0
-\item \verb{110–170}:                        1
-\item \verb{171–299}:                        2
-\item \verb{300–440}, or urine \verb{< 500 mL/24h}: 3
+\item \verb{110-170}:                        1
+\item \verb{171-299}:                        2
+\item \verb{300-440}, or urine \verb{< 500 mL/24h}: 3
 \item \verb{> 440},   or urine \verb{< 200 mL/24h}: 4
 }
 }

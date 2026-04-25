@@ -19,7 +19,7 @@
 #' @param ventilated,sedation,vasopressors,dialysis Optional column names
 #'   for binary indicators (logical or 0/1). Pass `NULL` to skip a variable.
 #' @param noradrenaline,dopamine,dobutamine,epinephrine Optional column names
-#'   for vasoactive drug doses (µg/kg/min). Pass `NULL` to skip a drug.
+#'   for vasoactive drug doses (ug/kg/min). Pass `NULL` to skip a drug.
 #' @param urine_output Optional column name for 24-hour urine output (mL).
 #' @param id,time Optional column names for subject id and time. When both
 #'   are supplied, the returned data frame includes `SOFA_admission` (the
@@ -28,7 +28,7 @@
 #' @param units_pao2_fio2 `"kPa"` or `"mmHg"`.
 #' @param units_bilirubin,units_creatinine `"umol/L"` or `"mg/dL"`.
 #' @param na_strategy How to aggregate the six subscores into a total. One of
-#'   `"sum_na_zero"` (default — `NA` subscores contribute 0 to the total,
+#'   `"sum_na_zero"` (default -- `NA` subscores contribute 0 to the total,
 #'   matching `rowSums(..., na.rm = TRUE)`) or `"propagate"` (any `NA`
 #'   subscore yields `NA` total).
 #'

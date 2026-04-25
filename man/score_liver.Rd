@@ -10,7 +10,7 @@ score_liver(bilirubin, units = c("umol/L", "mg/dL"))
 \item{bilirubin}{Numeric vector of total bilirubin.}
 
 \item{units}{One of \code{"umol/L"} (default) or \code{"mg/dL"}. Conversion factor
-1 mg/dL ≈ 17.1 µmol/L.}
+1 mg/dL ~ 17.1 umol/L.}
 }
 \value{
 Integer vector in \verb{\{0, 1, 2, 3, 4\}} (or \code{NA_integer_}).
@@ -18,7 +18,7 @@ Integer vector in \verb{\{0, 1, 2, 3, 4\}} (or \code{NA_integer_}).
 \description{
 Scores the liver subscale of the SOFA from total serum bilirubin.
 }
-\section{Scoring rules (µmol/L)}{
+\section{Scoring rules (umol/L)}{
 
 \itemize{
 \item \verb{< 20}:        0

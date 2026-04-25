@@ -4,11 +4,11 @@
 #'
 #' @param bilirubin Numeric vector of total bilirubin.
 #' @param units One of `"umol/L"` (default) or `"mg/dL"`. Conversion factor
-#'   1 mg/dL ≈ 17.1 µmol/L.
+#'   1 mg/dL ~ 17.1 umol/L.
 #'
 #' @return Integer vector in `{0, 1, 2, 3, 4}` (or `NA_integer_`).
 #'
-#' @section Scoring rules (µmol/L):
+#' @section Scoring rules (umol/L):
 #' \itemize{
 #'   \item `< 20`:        0
 #'   \item `>= 20, < 33`: 1

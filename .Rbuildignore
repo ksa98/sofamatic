@@ -9,6 +9,8 @@
 ^pkgdown$
 ^vignettes/articles$
 ^cran-comments\.md$
+^sofamatic_.*\.tar\.gz$
+^\.Rcheck$
 ^CONTRIBUTING\.md$
 ^CITATION\.cff$
 ^README\.Rmd$

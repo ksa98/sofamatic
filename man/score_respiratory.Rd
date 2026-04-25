@@ -14,7 +14,7 @@ mechanical ventilation. If \code{NULL} (the default), no cap is applied.}
 
 \item{units}{One of \code{"kPa"} or \code{"mmHg"}. Defaults to \code{"kPa"} (the SI
 unit). Internally the thresholds are 100, 200, 300, 400 mmHg
-(≈ 13.3, 26.7, 40, 53.3 kPa).}
+(~ 13.3, 26.7, 40, 53.3 kPa).}
 }
 \value{
 Integer vector in \verb{\{0, 1, 2, 3, 4\}} (or \code{NA_integer_}) of the same
@@ -48,5 +48,5 @@ score_respiratory(c(450, 350, 250, 150, 80),
 \references{
 Vincent, J. L., et al. (1996). The SOFA (Sepsis-related Organ Failure
 Assessment) score to describe organ dysfunction/failure. \emph{Intensive Care
-Medicine}, 22(7), 707–710.
+Medicine}, 22(7), 707-710.
 }

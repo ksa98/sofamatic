@@ -13,12 +13,12 @@ including longitudinal helpers for first-day and worst-day scoring.
 \section{Component functions}{
 
 \itemize{
-\item \code{\link[=score_respiratory]{score_respiratory()}}    — PaO2/FiO2 with optional ventilation flag
-\item \code{\link[=score_coagulation]{score_coagulation()}}    — platelets
-\item \code{\link[=score_liver]{score_liver()}}          — bilirubin
-\item \code{\link[=score_cardiovascular]{score_cardiovascular()}} — MAP, vasoactive doses
-\item \code{\link[=score_neurological]{score_neurological()}}   — GCS, optional sedation
-\item \code{\link[=score_renal]{score_renal()}}          — creatinine, urine output, dialysis
+\item \code{\link[=score_respiratory]{score_respiratory()}}    -- PaO2/FiO2 with optional ventilation flag
+\item \code{\link[=score_coagulation]{score_coagulation()}}    -- platelets
+\item \code{\link[=score_liver]{score_liver()}}          -- bilirubin
+\item \code{\link[=score_cardiovascular]{score_cardiovascular()}} -- MAP, vasoactive doses
+\item \code{\link[=score_neurological]{score_neurological()}}   -- GCS, optional sedation
+\item \code{\link[=score_renal]{score_renal()}}          -- creatinine, urine output, dialysis
 }
 }
 
@@ -31,7 +31,7 @@ six subscores, the total \code{SOFA_score}, and (for longitudinal data)
 
 \section{Citation}{
 
-If you use Sofamatic in academic work, please cite the package — see
+If you use Sofamatic in academic work, please cite the package -- see
 \code{citation("sofamatic")}.
 }
 

@@ -7,14 +7,14 @@
 score_neurological(gcs, sedation = NULL, na_strategy = c("na", "zero"))
 }
 \arguments{
-\item{gcs}{Integer or numeric vector of GCS values (3–15).}
+\item{gcs}{Integer or numeric vector of GCS values (3-15).}
 
 \item{sedation}{Optional logical or 0/1 vector indicating whether the
 patient was sedated at the time of assessment. When \code{NULL}, missing GCS
 values produce \code{NA_integer_} scores.}
 
 \item{na_strategy}{How to handle \code{NA} GCS when \code{sedation} is \code{NULL}. One
-of \code{"na"} (default — return \code{NA_integer_}) or \code{"zero"} (treat missing
+of \code{"na"} (default -- return \code{NA_integer_}) or \code{"zero"} (treat missing
 GCS as the best state, score 0).}
 }
 \value{
@@ -33,9 +33,9 @@ left blank.
 
 \itemize{
 \item GCS 15:        0
-\item GCS 13–14:     1
-\item GCS 10–12:     2
-\item GCS  6–9:      3
+\item GCS 13-14:     1
+\item GCS 10-12:     2
+\item GCS  6-9:      3
 \item GCS  < 6:      4
 }
 }

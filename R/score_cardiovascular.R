@@ -4,12 +4,12 @@
 #' (MAP) and, if available, the dosing of vasoactive drugs. The function
 #' supports two calling conventions:
 #'
-#' 1. **Detailed dosing** — pass any subset of `dopamine`, `dobutamine`,
-#'    `norepinephrine`, `epinephrine` as numeric vectors (in µg/kg/min). This
+#' 1. **Detailed dosing** -- pass any subset of `dopamine`, `dobutamine`,
+#'    `norepinephrine`, `epinephrine` as numeric vectors (in ug/kg/min). This
 #'    follows the canonical SOFA definition (Vincent 1996) and is the
 #'    recommended path when individual drug doses are recorded.
-#' 2. **Simple flag + norepinephrine dose** — pass `vasopressors` (logical
-#'    or 0/1) together with `norepinephrine` (µg/kg/min). This is convenient
+#' 2. **Simple flag + norepinephrine dose** -- pass `vasopressors` (logical
+#'    or 0/1) together with `norepinephrine` (ug/kg/min). This is convenient
 #'    when norepinephrine is the only dose recorded numerically and other
 #'    vasoactive use is captured by a single binary flag.
 #'
@@ -20,7 +20,7 @@
 #' @param vasopressors Optional logical or 0/1 numeric flag indicating that
 #'   any vasopressor was running.
 #' @param dopamine,dobutamine,norepinephrine,epinephrine Optional numeric
-#'   vectors of drug dose in µg/kg/min. `NULL` (default) means the drug was
+#'   vectors of drug dose in ug/kg/min. `NULL` (default) means the drug was
 #'   not given or the data are unavailable.
 #'
 #' @return Integer vector in `{0, 1, 2, 3, 4}` (or `NA_integer_`).
@@ -28,10 +28,10 @@
 #' @section Scoring rules:
 #' \itemize{
 #'   \item 4: dopamine > 15, or norepinephrine > 0.1, or epinephrine > 0.1
-#'   \item 3: dopamine > 5, or norepinephrine > 0 (≤ 0.1), or epinephrine > 0 (≤ 0.1)
-#'   \item 2: dopamine > 0 (≤ 5), or any dobutamine
+#'   \item 3: dopamine > 5, or norepinephrine > 0 (<= 0.1), or epinephrine > 0 (<= 0.1)
+#'   \item 2: dopamine > 0 (<= 5), or any dobutamine
 #'   \item 1: MAP < 70 mmHg with no vasoactive support
-#'   \item 0: MAP ≥ 70 mmHg with no vasoactive support
+#'   \item 0: MAP >= 70 mmHg with no vasoactive support
 #' }
 #'
 #' @examples

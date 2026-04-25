@@ -40,7 +40,7 @@ character strings) holding the corresponding clinical measurements.}
 for binary indicators (logical or 0/1). Pass \code{NULL} to skip a variable.}
 
 \item{noradrenaline, dopamine, dobutamine, epinephrine}{Optional column names
-for vasoactive drug doses (µg/kg/min). Pass \code{NULL} to skip a drug.}
+for vasoactive drug doses (ug/kg/min). Pass \code{NULL} to skip a drug.}
 
 \item{urine_output}{Optional column name for 24-hour urine output (mL).}
 
@@ -54,7 +54,7 @@ are supplied, the returned data frame includes \code{SOFA_admission} (the
 \item{units_bilirubin, units_creatinine}{\code{"umol/L"} or \code{"mg/dL"}.}
 
 \item{na_strategy}{How to aggregate the six subscores into a total. One of
-\code{"sum_na_zero"} (default — \code{NA} subscores contribute 0 to the total,
+\code{"sum_na_zero"} (default -- \code{NA} subscores contribute 0 to the total,
 matching \code{rowSums(..., na.rm = TRUE)}) or \code{"propagate"} (any \code{NA}
 subscore yields \code{NA} total).}
 }

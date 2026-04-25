@@ -10,16 +10,16 @@
 #'   therapy. Patients receiving dialysis are scored 4 regardless of
 #'   creatinine and urine output.
 #' @param units One of `"umol/L"` (default) or `"mg/dL"` for creatinine.
-#'   Conversion factor 1 mg/dL ≈ 88.4 µmol/L.
+#'   Conversion factor 1 mg/dL ~ 88.4 umol/L.
 #'
 #' @return Integer vector in `{0, 1, 2, 3, 4}` (or `NA_integer_`).
 #'
-#' @section Scoring rules (µmol/L):
+#' @section Scoring rules (umol/L):
 #' \itemize{
 #'   \item `< 110`:                          0
-#'   \item `110–170`:                        1
-#'   \item `171–299`:                        2
-#'   \item `300–440`, or urine `< 500 mL/24h`: 3
+#'   \item `110-170`:                        1
+#'   \item `171-299`:                        2
+#'   \item `300-440`, or urine `< 500 mL/24h`: 3
 #'   \item `> 440`,   or urine `< 200 mL/24h`: 4
 #' }
 #'

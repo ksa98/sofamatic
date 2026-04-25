@@ -11,7 +11,7 @@
 #'   mechanical ventilation. If `NULL` (the default), no cap is applied.
 #' @param units One of `"kPa"` or `"mmHg"`. Defaults to `"kPa"` (the SI
 #'   unit). Internally the thresholds are 100, 200, 300, 400 mmHg
-#'   (≈ 13.3, 26.7, 40, 53.3 kPa).
+#'   (~ 13.3, 26.7, 40, 53.3 kPa).
 #'
 #' @return Integer vector in `{0, 1, 2, 3, 4}` (or `NA_integer_`) of the same
 #'   length as `pao2_fio2`.
@@ -34,7 +34,7 @@
 #' @references
 #' Vincent, J. L., et al. (1996). The SOFA (Sepsis-related Organ Failure
 #'   Assessment) score to describe organ dysfunction/failure. *Intensive Care
-#'   Medicine*, 22(7), 707–710.
+#'   Medicine*, 22(7), 707-710.
 #'
 #' @export
 score_respiratory <- function(pao2_fio2,

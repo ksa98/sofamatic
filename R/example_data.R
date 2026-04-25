@@ -21,17 +21,17 @@
 #'     \item{`day`}{0-indexed day since admission}
 #'     \item{`age`}{years}
 #'     \item{`sex`}{`"F"`/`"M"`}
-#'     \item{`bmi`}{kg/m²}
+#'     \item{`bmi`}{kg/m^2}
 #'     \item{`pao2_fio2`}{kPa}
 #'     \item{`ventilated`}{0/1}
-#'     \item{`platelets`}{10⁹/L}
-#'     \item{`bilirubin`}{µmol/L}
+#'     \item{`platelets`}{10^9/L}
+#'     \item{`bilirubin`}{umol/L}
 #'     \item{`vasopressors`}{0/1 flag}
-#'     \item{`noradrenaline`}{µg/kg/min}
+#'     \item{`noradrenaline`}{ug/kg/min}
 #'     \item{`map`}{mmHg}
 #'     \item{`sedation`}{0/1}
-#'     \item{`gcs`}{3–15 (with occasional `NA` for sedated patients)}
-#'     \item{`creatinine`}{µmol/L}
+#'     \item{`gcs`}{3-15 (with occasional `NA` for sedated patients)}
+#'     \item{`creatinine`}{umol/L}
 #'     \item{`urine_output`}{mL/24h}
 #'     \item{`dialysis`}{0/1}
 #'   }
@@ -72,11 +72,11 @@ example_sofa_data <- function(n_subjects = 10,
     0
   )
 
-  # MAP — slightly lower when on vasopressors
+  # MAP -- slightly lower when on vasopressors
   map <- round(stats::rnorm(n, mean = ifelse(vasopressors == 1, 70, 80),
                             sd = 10), 1)
 
-  # GCS — random in 3–15, sometimes NA when sedated
+  # GCS -- random in 3-15, sometimes NA when sedated
   gcs <- sample(3:15, n, replace = TRUE)
   gcs[sedation == 1 & stats::runif(n) < 0.25] <- NA
 

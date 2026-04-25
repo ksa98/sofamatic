@@ -21,17 +21,17 @@ columns:
 \item{\code{day}}{0-indexed day since admission}
 \item{\code{age}}{years}
 \item{\code{sex}}{\code{"F"}/\code{"M"}}
-\item{\code{bmi}}{kg/m²}
+\item{\code{bmi}}{kg/m^2}
 \item{\code{pao2_fio2}}{kPa}
 \item{\code{ventilated}}{0/1}
-\item{\code{platelets}}{10⁹/L}
-\item{\code{bilirubin}}{µmol/L}
+\item{\code{platelets}}{10^9/L}
+\item{\code{bilirubin}}{umol/L}
 \item{\code{vasopressors}}{0/1 flag}
-\item{\code{noradrenaline}}{µg/kg/min}
+\item{\code{noradrenaline}}{ug/kg/min}
 \item{\code{map}}{mmHg}
 \item{\code{sedation}}{0/1}
-\item{\code{gcs}}{3–15 (with occasional \code{NA} for sedated patients)}
-\item{\code{creatinine}}{µmol/L}
+\item{\code{gcs}}{3-15 (with occasional \code{NA} for sedated patients)}
+\item{\code{creatinine}}{umol/L}
 \item{\code{urine_output}}{mL/24h}
 \item{\code{dialysis}}{0/1}
 }
