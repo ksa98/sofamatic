@@ -8,7 +8,7 @@ template:
     base_font: {google: "Inter"}
     heading_font: {google: "Inter"}
     code_font: {google: "JetBrains Mono"}
-    font_scale: 0.9
+    font_scale: 0.81
     headings-font-weight: 600
     border-radius: "0.4rem"
     btn-border-radius: "0.4rem"
