@@ -1,4 +1,4 @@
-#' sofamatic: Sequential Organ Failure Assessment scoring in R
+#' Sofamatic: Sequential Organ Failure Assessment scoring in R
 #'
 #' Automatic SOFA scoring for R. Vectorised, dependency-light functions for
 #' computing SOFA subscores and the total SOFA score from clinical data,
@@ -20,7 +20,7 @@
 #' `SOFA_admission` and `SOFA_max` per subject.
 #'
 #' @section Citation:
-#' If you use sofamatic in academic work, please cite the package — see
+#' If you use Sofamatic in academic work, please cite the package — see
 #' `citation("sofamatic")`.
 #'
 #' @keywords internal

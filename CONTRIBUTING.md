@@ -1,6 +1,6 @@
-# Contributing to sofamatic
+# Contributing to Sofamatic
 
-Thanks for your interest in improving sofamatic. Bug reports, feature requests,
+Thanks for your interest in improving Sofamatic. Bug reports, feature requests,
 and pull requests are all welcome.
 
 ## Reporting a bug

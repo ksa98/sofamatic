@@ -1,20 +1,22 @@
-# sofamatic <a href="https://ksa98.github.io/sofamatic/"><img src="man/figures/logo.png" align="right" width="160" height="160" alt="sofamatic logo" style="margin-left: 1em;" /></a>
+# Sofamatic <a href="https://ksa98.github.io/sofamatic/"><img src="man/figures/logo.png" align="right" width="160" height="160" alt="Sofamatic logo" style="margin-left: 1em;" /></a>
 
 > *Automatic SOFA scoring for R.*
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/ksa98/sofamatic/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ksa98/sofamatic/actions/workflows/R-CMD-check.yaml)
 [![pkgdown](https://github.com/ksa98/sofamatic/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/ksa98/sofamatic/actions/workflows/pkgdown.yaml)
-[![Codecov test coverage](https://codecov.io/gh/ksa98/sofamatic/branch/main/graph/badge.svg)](https://app.codecov.io/gh/ksa98/sofamatic?branch=main)
-[![CRAN status](https://www.r-pkg.org/badges/version/sofamatic)](https://CRAN.R-project.org/package=sofamatic)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R >= 4.0](https://img.shields.io/badge/R-%3E%3D%204.0-1f65b7.svg)](https://www.r-project.org/)
 [![License: BSD-4-Clause](https://img.shields.io/badge/license-BSD--4--Clause-blue.svg)](https://opensource.org/licenses/BSD-4-Clause)
-[![Last commit](https://img.shields.io/github/last-commit/ksa98/sofamatic/main.svg)](https://github.com/ksa98/sofamatic/commits/main)
-[![Issues](https://img.shields.io/github/issues/ksa98/sofamatic.svg)](https://github.com/ksa98/sofamatic/issues)
 <!-- badges: end -->
 
-**sofamatic** is a small, dependency-light R package that computes the
+<!--
+Add these once the corresponding services are connected:
+[![Codecov test coverage](https://codecov.io/gh/ksa98/sofamatic/graph/badge.svg)](https://app.codecov.io/gh/ksa98/sofamatic)
+[![CRAN status](https://www.r-pkg.org/badges/version/sofamatic)](https://CRAN.R-project.org/package=sofamatic)
+-->
+
+**Sofamatic** is a small, dependency-light R package that computes the
 **Sequential Organ Failure Assessment (SOFA)** score and its six
 sub-scores from clinical data. It works on both cross-sectional snapshots
 and longitudinal (one-row-per-day) layouts, and supports SI as well as

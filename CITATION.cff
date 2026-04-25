@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use sofamatic in academic work, please cite it as below."
-title: "sofamatic: Sequential Organ Failure Assessment scoring in R"
+message: "If you use Sofamatic in academic work, please cite it as below."
+title: "Sofamatic: Sequential Organ Failure Assessment scoring in R"
 abstract: >
   An R package providing vectorised functions to compute Sequential Organ
   Failure Assessment (SOFA) sub-scores and the total SOFA score from

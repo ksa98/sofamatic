@@ -1,4 +1,4 @@
-<!-- Thanks for contributing to sofamatic! -->
+<!-- Thanks for contributing to Sofamatic! -->
 
 ## Summary
 

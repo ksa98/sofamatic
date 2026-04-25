@@ -159,7 +159,7 @@ push to `main`.
 R >= 4.0.0. The package depends on base R and `stats` only — there are
 no other runtime dependencies.
 
-## How do I cite sofamatic?
+## How do I cite Sofamatic?
 
 ```{r, eval = FALSE}
 citation("sofamatic")

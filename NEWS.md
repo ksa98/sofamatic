@@ -1,4 +1,4 @@
-# sofamatic 0.1.0
+# Sofamatic 0.1.0
 
 First public release. *Sofar, so good.*
 

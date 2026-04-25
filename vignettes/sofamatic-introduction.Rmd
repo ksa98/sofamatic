@@ -1,8 +1,8 @@
 ---
-title: "Introduction to sofamatic"
+title: "Introduction to Sofamatic"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to sofamatic}
+  %\VignetteIndexEntry{Introduction to Sofamatic}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
