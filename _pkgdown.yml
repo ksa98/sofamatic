@@ -6,9 +6,9 @@ articles:
 - title: Articles
   navbar: ~
   contents:
-  - sofamatic-introduction
-  - case-study-icu-cohort
-  - edge-cases-and-limits
+  - '`sofamatic-introduction`'
+  - '`case-study-icu-cohort`'
+  - '`edge-cases-and-limits`'
   - faq
 
 reference:
